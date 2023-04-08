@@ -2,8 +2,9 @@
 // colors
 :root {
   // base
-  --font-family: "Open Sans", sans-serif;
-  --content-width: 1170px;
+  --font-family: "PublicSans-Regular", sans-serif;
+  --second-family: "LibreBaskerville-Regular", sans-serif;
+  --content-width: 1152px;
   --container-offset: 15px;
   --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
 
@@ -12,4 +13,8 @@
 
   // colors
   --light-color: #fff;
+
+  // font sizes
+  --main-size: 13px;
+  --second-size: 15px;
 }
