@@ -1,0 +1,106 @@
+.press{
+  padding-top: 88px;
+  background-color: var(--light-color);
+
+  &__top{
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
+  }
+
+  &__title{
+    margin: 0;
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 38px;
+    letter-spacing: 1.2px;
+    color: #003331;
+  }
+
+  &__link{
+    color: #00413E;
+    border-color: rgba(53, 83, 98, 0.2);
+  }
+
+  &__item{
+    grid-column: 4 span;
+  }
+
+  &__list{
+    row-gap: var(--offset);
+  }
+}
+
+.press-card{
+  border-top: 1px solid rgba(53, 83, 98, 0.3);
+  min-height: 145px;
+  padding-top: 16px;
+
+  &__top{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 11px;
+  }
+
+  &__date{
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 16px;
+    letter-spacing: 0.5px;
+    color: var(--text-color);
+  }
+
+  &__author{
+    margin: -18px 0;
+    padding: 18px 0;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 16px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: var(--text-color);
+    padding-left: 32px;
+    background-size: 24px 24px;
+    background-repeat: no-repeat;
+    background-position: left top 15px;
+    transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+  }
+
+  &__author--ted{
+    background-image: url(../../img/svg/approach-icon-ted.svg);
+  }
+
+  &__author--corr{
+    background-image: url(../../img/svg/press-icon-corr.svg);
+  }
+
+  &__author--justice{
+    background-image: url(../../img/svg/press-icon-justice.svg);
+  }
+
+  &__author--nyt{
+    background-image: url(../../img/svg/approach-icon-nyt.svg);
+  }
+
+  &__author--corr1{
+    background-image: url(../../img/svg/press-icon-corr1.svg);
+  }
+
+  &__author--crime{
+    background-image: url(../../img/svg/press-icon-crime.svg);
+  }
+
+  &__title{
+    margin: 0;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 25px;
+    color: #00413E;
+  }
+
+  &__link{
+    color: inherit;
+  }
+}
