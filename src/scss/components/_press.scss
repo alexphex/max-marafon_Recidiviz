@@ -98,9 +98,26 @@
     font-size: 17px;
     line-height: 25px;
     color: #00413E;
+    transition: color 0.3s ease-in-out;
   }
 
   &__link{
     color: inherit;
+    transition: color 0.3s ease-in-out;
+
+    &:focus{
+      outline: none;
+    }
+
+    @include hover{
+      color: var(--accent-color);
+    }
+
+    &:active{
+      color: var(--active-color);
+    }
   }
 }
+
+
+
