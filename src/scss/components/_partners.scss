@@ -4,11 +4,29 @@
   &__container{
     gap: 6px;
     align-items: center;
+
+    @include big-desktop{
+      justify-content: space-around;
+    }
+
+    @include tablet{
+      flex-wrap: wrap;
+      justify-content: flex-start;
+    }
   }
 
   &__list{
     gap: 12px;
     align-items: center;
+
+    @include big-desktop{
+      justify-content: space-between;
+    }
+
+    @include tablet{
+      flex-wrap: wrap;
+      justify-content: flex-start;
+    }
   }
 
   &__title{
@@ -19,6 +37,12 @@
     letter-spacing: 0.5px;
     text-transform: uppercase;
     color: rgba(53, 83, 98, 0.6);
+  }
+
+  &__logo{
+    @include big-desktop{
+      max-width: 130px;
+    }
   }
 
   &__more{

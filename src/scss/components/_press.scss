@@ -6,6 +6,11 @@
     align-items: center;
     justify-content: space-between;
     margin-bottom: 24px;
+
+    @include small-tablet{
+      flex-wrap: wrap;
+      gap: 20px;
+    }
   }
 
   &__title{
@@ -29,6 +34,10 @@
 
   &__list{
     row-gap: var(--offset);
+  }
+
+  @include small-tablet{
+    padding: 60px 0;
   }
 }
 

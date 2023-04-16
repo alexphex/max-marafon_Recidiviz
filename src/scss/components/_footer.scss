@@ -4,6 +4,16 @@
     background-color: #001414;
     padding-top: 112px;
     padding-bottom: 137px;
+
+    .container{
+      @include small-tablet{
+        row-gap: var(--offset);
+      }
+    }
+
+    @include small-tablet{
+      padding: 60px 0;
+    }
   }
 
   &__column{
@@ -11,6 +21,10 @@
 
     &:last-child{
       grid-column: 11 / 2 span;
+
+      @include small-tablet{
+        grid-column: 2 span;
+      }
     }
   }
 
@@ -62,11 +76,25 @@
     padding-top: 45px;
     padding-bottom: 63px;
 
-    &-container,
+    &-container{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      @include small-tablet{
+        flex-direction: column;
+      }
+    }
     &-text{
       display: flex;
       align-items: center;
       justify-content: space-between;
+    }
+  }
+
+  &__logo{
+    @include small-tablet{
+      margin-bottom: 20px;
     }
   }
 
@@ -94,7 +122,18 @@
       &:active{
         color: var(--active-color);
       }
+
+      @include small-tablet{
+        font-size: 14px;
+      }
     }
+
+    @include small-tablet{
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 20px;
+    }
+
   }
 
   &__copy{

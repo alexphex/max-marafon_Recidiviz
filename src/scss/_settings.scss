@@ -114,9 +114,25 @@ a {
   display: grid;
   column-gap: var(--offset);
   grid-template-columns: repeat(12, 1fr);
+
+  @include small-tablet{
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 .graphics{
   width: 100%;
   background-color: #f4f5f5;
+}
+
+.burger{
+  @include burger;
+
+  --burger-height: 20px;
+  color: var(--light-color);
+  display: none;
+
+  @include small-tablet{
+    display: block;
+  }
 }
